@@ -28,7 +28,7 @@ export default function AdminLoginPage() {
     setLoading(true)
     try {
       await signInWithEmailAndPassword(auth, email.trim(), password)
-      router.push("/")
+      router.push("/dashboard")
     } catch {
       toast({
         title: "Login failed",

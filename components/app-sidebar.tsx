@@ -20,7 +20,7 @@ import { useState } from "react"
 import { useAuth } from "@/components/auth-provider"
 
 const navItems = [
-  { label: "Dashboard", href: "/", icon: LayoutDashboard },
+  { label: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
   { label: "Dispatch", href: "/dispatch", icon: Send },
   { label: "Orders", href: "/orders", icon: Package },
   { label: "Drivers", href: "/drivers", icon: Users },

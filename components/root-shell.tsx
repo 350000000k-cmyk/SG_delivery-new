@@ -14,7 +14,7 @@ export function RootShell({ children }: { children: React.ReactNode }) {
   const isDriverRoute = pathname.startsWith("/driver")
   const isPublicTrackingRoute = pathname.startsWith("/track/")
   const isLoginRoute = pathname === "/login"
-  const isLandingRoute = pathname === "/landing"
+  const isLandingRoute = pathname === "/"
 
   // These routes don't need admin auth
   const isPublicRoute = isDriverRoute || isPublicTrackingRoute || isLoginRoute || isLandingRoute
@@ -22,10 +22,10 @@ export function RootShell({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (loading) return
     if (!isPublicRoute && !user) {
-      router.replace("/landing")
+      router.replace("/")
     }
     if (isLoginRoute && user) {
-      router.replace("/")
+      router.replace("/dashboard")
     }
   }, [loading, user, isPublicRoute, isLoginRoute, router])
 
