@@ -465,7 +465,7 @@ export default function TrackingPage({ params }: { params: Promise<{ tracking: s
       <aside className="flex h-full flex-col overflow-y-auto border-r bg-background">
         {/* Branding */}
         <div className="border-b px-6 py-4">
-          <p className="text-[11px] uppercase tracking-widest text-muted-foreground">Powered by Sterlin Glams</p>
+          <p className="text-[11px] uppercase tracking-widest text-muted-foreground">Powered by Sterlinglams Logistics</p>
         </div>
 
         {/* Status + ETA */}

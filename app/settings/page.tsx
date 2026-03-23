@@ -43,7 +43,7 @@ export default function SettingsPage() {
                 <Label htmlFor="company-name">Company Name</Label>
                 <Input
                   id="company-name"
-                  defaultValue="Sterlin Glams Delivery System"
+                  defaultValue="Sterlinglams Logistics"
                 />
               </div>
               <div className="flex flex-col gap-2">

@@ -40,7 +40,7 @@ export default function LandingPage() {
               <Truck className="h-5 w-5 text-primary-foreground" />
             </div>
             <div className="leading-tight">
-              <span className="text-base font-bold tracking-tight">Sterling Lams</span>
+              <span className="text-base font-bold tracking-tight">Sterlinglams</span>
               <span className="block text-[11px] font-medium uppercase tracking-widest text-muted-foreground">
                 Logistics
               </span>
@@ -90,7 +90,7 @@ export default function LandingPage() {
                 rel="noopener noreferrer"
                 className="font-medium text-foreground underline decoration-primary/40 underline-offset-2 hover:decoration-primary"
               >
-                Sterling Lams
+                Sterlinglams
               </a>
               . We pick up, ship, and deliver your packages with
               real-time tracking&nbsp;and&nbsp;care.
@@ -202,16 +202,16 @@ export default function LandingPage() {
       {/* ── ABOUT ── */}
       <section id="about" className="border-t border-border/50 bg-secondary/30 py-20">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <h2 className="text-2xl font-bold sm:text-3xl">About Sterling Lams Logistics</h2>
+          <h2 className="text-2xl font-bold sm:text-3xl">About Sterlinglams Logistics</h2>
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
-            Sterling Lams Logistics is the official delivery division of{" "}
+            Sterlinglams Logistics is the official delivery division of{" "}
             <a
               href="https://www.sterlinglams.com"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-foreground underline decoration-primary/40 underline-offset-2 hover:decoration-primary"
             >
-              Sterling Lams
+              Sterlinglams
             </a>
             . We provide fast, secure, and affordable courier services powered by
             technology — from smart route optimisation to real-time GPS tracking.
@@ -277,7 +277,7 @@ export default function LandingPage() {
               <div className="flex h-7 w-7 items-center justify-center rounded-md bg-primary">
                 <Truck className="h-4 w-4 text-primary-foreground" />
               </div>
-              <span className="text-sm font-semibold">Sterling Lams Logistics</span>
+              <span className="text-sm font-semibold">Sterlinglams Logistics</span>
             </div>
             <p className="text-xs text-muted-foreground">
               &copy; {new Date().getFullYear()} sterlinglamslogistics.com &mdash; All rights reserved.

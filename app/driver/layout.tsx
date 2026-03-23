@@ -3,8 +3,8 @@ import { Toaster } from "@/components/ui/toaster"
 import { DriverTabs } from "@/components/driver-tabs"
 
 export const metadata: Metadata = {
-  title: "Sterlin Glams - Driver App",
-  description: "Driver mobile interface for Sterlin Glams deliveries",
+  title: "Sterlinglams - Driver App",
+  description: "Driver mobile interface for Sterlinglams deliveries",
 }
 
 export default function DriverLayout({
