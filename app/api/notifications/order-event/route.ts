@@ -15,6 +15,7 @@ async function writeNotificationLog(input: {
   whatsapp: { sent: boolean; reason?: string; detail?: string }
   email: { sent: boolean; reason?: string; detail?: string }
 }) {
+  if (!db) return
   try {
     await addDoc(collection(db, "notificationLogs"), {
       event: input.event,
