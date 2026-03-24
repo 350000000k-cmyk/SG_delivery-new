@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Space_Grotesk } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { RootShell } from '@/components/root-shell'
 import { AuthProvider } from '@/components/auth-provider'
 import { Toaster } from '@/components/ui/toaster'
@@ -45,6 +46,7 @@ export default function RootLayout({
           <RootShell>{children}</RootShell>
         </AuthProvider>
         <Analytics />
+        <SpeedInsights />
         <Toaster />
       </body>
     </html>
