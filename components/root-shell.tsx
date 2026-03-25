@@ -22,7 +22,7 @@ export function RootShell({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (loading) return
     if (!isPublicRoute && !user) {
-      router.replace("/login")
+      router.replace("/")
     }
     if (isLoginRoute && user) {
       router.replace("/dashboard")
