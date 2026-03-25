@@ -8,6 +8,7 @@ node_modules/
 .next/
 .env
 .env.*
+!.env.production
 .DS_Store
 driver-mobile/node_modules/
 driver-mobile/android/.gradle/
