@@ -150,11 +150,11 @@ export default function DriverDashboard() {
 
   function handleNavigate(address: string) {
     const encoded = encodeURIComponent(address)
-    window.open(`https://www.google.com/maps/dir/?api=1&destination=${encoded}`, "_blank")
+    window.location.href = `https://www.google.com/maps/dir/?api=1&destination=${encoded}`
   }
 
   function handleCall(phone: string) {
-    window.open(`tel:${phone}`)
+    window.location.href = `tel:${phone}`
   }
 
   async function handleMarkPickedUp(order: Order) {

@@ -1,15 +1,6 @@
 import type { CapacitorConfig } from "@capacitor/cli"
 
-const rawBaseUrl = process.env.DRIVER_APP_URL || "http://192.168.1.222:3000"
-const baseUrl = `${rawBaseUrl.replace(/\/$/, "")}/driver?driverApp=1`
-
-const allowHost = (() => {
-  try {
-    return [new URL(baseUrl).host]
-  } catch {
-    return []
-  }
-})()
+const baseUrl = (process.env.DRIVER_APP_URL || "https://sterlinglamslogistics.com/driver").replace(/\/$/, "")
 
 const config: CapacitorConfig = {
   appId: "com.sterlinglams.driver",
@@ -18,7 +9,11 @@ const config: CapacitorConfig = {
   server: {
     url: baseUrl,
     cleartext: baseUrl.startsWith("http://"),
-    allowNavigation: allowHost
+    allowNavigation: ["sterlinglamslogistics.com", "*.sterlinglamslogistics.com"]
+  },
+  android: {
+    allowMixedContent: false,
+    appendUserAgent: "SterlinDriverApp"
   }
 }
 

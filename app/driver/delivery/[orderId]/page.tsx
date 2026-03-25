@@ -235,11 +235,11 @@ export default function DeliveryCompletionPage({
         <div className="mt-3 flex gap-2">
           <Button size="sm" variant="outline" className="flex-1" onClick={() => {
             const encoded = encodeURIComponent(order.address)
-            window.open(`https://www.google.com/maps/dir/?api=1&destination=${encoded}`, "_blank")
+            window.location.href = `https://www.google.com/maps/dir/?api=1&destination=${encoded}`
           }}>
             <Navigation className="mr-1 h-3 w-3" /> Navigate
           </Button>
-          <Button size="sm" variant="outline" className="flex-1" onClick={() => window.open(`tel:${order.phone}`)}>
+          <Button size="sm" variant="outline" className="flex-1" onClick={() => { window.location.href = `tel:${order.phone}` }}>
             <Phone className="mr-1 h-3 w-3" /> Call
           </Button>
         </div>
